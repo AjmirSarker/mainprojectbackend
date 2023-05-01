@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const dotenv = require('dotenv');
 // const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 
@@ -59,7 +60,7 @@ const {connect} = require("./db/connection");
 const { CreateError } = require('./helper/CreateError');
 
 /* env configuration */
-require('dotenv').config();
+dotenv.config();
 
 /* database configuration */
 connect();
