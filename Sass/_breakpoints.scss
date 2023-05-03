@@ -1,0 +1,30 @@
+// 700 - 900 = medium
+// 900 - 1440 = large
+// greater than 1440 = extra large
+
+$BreakPoints-up: (
+  "medium": 48.06em,
+
+  "large": 68.75em,
+
+  "xlarge": 90em,
+);
+
+$BreakPoints-down: (
+  "small": 48.05em,
+
+  "medium": 68.74em,
+
+  "large": 89.998em,
+);
+
+@mixin breakpoint_min($target) {
+  @media (min-width: map-get($BreakPoints-up, $target)) {
+    @content;
+  }
+}
+@mixin breakpoint_max($target) {
+  @media (max-width: map-get($BreakPoints-down, $target)) {
+    @content;
+  }
+}
