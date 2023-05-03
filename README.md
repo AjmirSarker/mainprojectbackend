@@ -1,6 +1,6 @@
 ## Message
 
-This repository contains all the individual **components** which can be used for development purposes and
+This branch contains all the individual **components** which can be used for development purposes and
 when a single component is ready to be used, we will merge them into the **main** branch of this project
 
 ## Available Scripts
